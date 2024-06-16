@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+
+body {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 2%, rgba(253, 29, 29, 1) 67%, rgba(252, 176, 69, 1) 100%);
+}
+
+.messageSen,
+.messageRec {
+    display: flex;
+    align-items: center;
+
+}
+
+.messageSen {
+    justify-content: start;
+
+}
+
+.messageRec {
+    justify-content: end;
+}
+
+.messageSen p {
+    background-color: #b0e364;
+    margin: 7px;
+    padding: 6px 8px;
+    border-radius: 10px;
+    justify-content: start;
+    font-size: 14px;
+    width: max-content;
+}
+
+.messageRec p {
+    background-color: rgb(187, 187, 248);
+    margin: 7px;
+    padding: 6px 8px;
+    border-radius: 10px;
+    justify-content: end;
+    font-size: 14px;
+    width: max-content;
+}
+
+.poetsOne {
+    font-family: "Poetsen One", sans-serif;
+}
+
+.redressed {
+    font-family: "Redressed", cursive;
+
+}
+
+.pacifico {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eczar {
+    font-family: "Eczar", serif;
+
+}
+
+.merienda {
+    font-family: "Merienda", cursive;
+
+}
+
+.crimson {
+    font-family: "Crimson Text", serif;
+
+}
+
+.form {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+
+}
+
+.onlineUsers {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.userSectionContainer p {
+    color: rgb(229, 229, 229);
+}
+
+.userSectionContainer span {
+    padding: 6px 12px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(5 46 22 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(134 239 172 / var(--tw-text-opacity));
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 0.375rem;
+}
+
+.messages {
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.greenBtn{
+    box-shadow: 2px 2px 12px green;
+    
+}
+.redBtn{
+    box-shadow: 2px 2px 18px rgb(235, 53, 53);
+}
+
+.creation{
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.blackShadow{
+    box-shadow: 2px 2px 12px rgb(133, 132, 132);
+}
+
+.slateShadow{
+    box-shadow: 2px 2px 14px rgb(1, 1, 54);
+}
+
+.joining{
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+@tailwind utilities;
+
+@layer components {
+    .userSectionContainer {
+        @apply m-2 bg-black text-white px-[18px] py-[16px] rounded-2xl flex justify-between items-center crimson;
+    }
+
+    .room {
+        @apply flex justify-between items-center bg-slate-900 my-2 mx-[10px] rounded-xl text-white slateShadow;
+    }
+
+    .room p{
+        @apply mx-3 my-2;
+    }
+    
+    .room button{
+        @apply mx-2 my-2 px-4 py-[6px] bg-blue-600 text-blue-300 rounded-xl font-semibold hover:text-white;
+    }
+    .usersInRoom span{
+        @apply my-3 mx-[1px] text-slate-900 text-base;
+    }
+}
